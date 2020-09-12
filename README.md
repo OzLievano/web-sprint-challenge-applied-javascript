@@ -28,14 +28,17 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
-2. What is an event?
+The DOM also known as the document object model.. is an API that allows use connect to the page and change the structure, style, and content of the page.
 
+2. What is an event?
+    An event is any action taken by a user on the webpage... 'click','scroll', 'mouseover',etc..
 3. What is an event listener?
+    Simply a procedure that waits for an event to occur before performing some action. (i.e wait for click to change the style)
 
 4. Why would we convert a NodeList into an Array?
-
+    Mainly to run advanced array methods like forEach, map, filter on the html elements we have pulled with 'querySelector' or 'querySelectorall'.
 5. What is a component?
-
+Similar to functions - they are independent and reusable but they work to return HTML via a render fuction..
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
