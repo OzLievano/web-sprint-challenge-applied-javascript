@@ -28,6 +28,18 @@ const axiosPromise = axios.get("https://lambda-times-api.herokuapp.com/articles"
     r.data.articles.javascript.forEach(item=>{
         cardMaker(item);
     })
+    r.data.articles.bootstrap.forEach(item=>{
+        cardMaker(item);
+    })
+    r.data.articles.technology.forEach(item=>{
+        cardMaker(item);
+    })
+    r.data.articles.jquery.forEach(item=>{
+        cardMaker(item);
+    })
+    r.data.articles.node.forEach(item=>{
+        cardMaker(item);
+    })
 })
 
 
@@ -37,6 +49,7 @@ function cardMaker(article){
     card.classList.add('card');
     let headline = document.createElement('div');
     headline.classList.add('headline');
+    headline.textContent = article.headline;
     let author = document.createElement('div');
     author.classList.add('author');
     card.appendChild(author);
@@ -50,4 +63,8 @@ function cardMaker(article){
     author.appendChild(imageCont);
     card.append(headline,author);
     cardContainer.appendChild(card);
+
+    card.addEventListener('click',()=>{
+        console.log(article.headline)
+    })
 }
